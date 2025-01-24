@@ -1,0 +1,14 @@
+# IntelliJ IDEA
+.idea/
+
+# Java build directories
+productMicroService/target/
+productMicroService/out/
+
+# Maven
+productMicroService/.mvn/
+productMicroService/mvnw
+productMicroService/mvnw.cmd
+
+# Application properties
+productMicroService/src/main/resources/application.properties
