@@ -1,6 +1,6 @@
 package francisco.personal.productmicroservice.service;
 
-import francisco.personal.productmicroservice.entities.Product;
+import francisco.personal.productmicroservice.entities.ProductDTO;
 import francisco.personal.productmicroservice.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,20 +14,20 @@ public class ProductService {
     private ProductRepository productRepository;
 
 
-    public Product createProcut(Product product) {
+    public ProductDTO createProcut(ProductDTO product) {
         return productRepository.save(product);
     }
 
-    public List<Product> getAllProducts() {
+    public List<ProductDTO> getAllProducts() {
         return productRepository.findAll();
     }
 
-    public Product getProductById(Long id) {
+    public ProductDTO getProductById(Long id) {
         return productRepository.findById(id).orElseThrow(() -> new RuntimeException("Product not found"));
     }
 
-    public Product updateProduct(Long id, Product product) {
-        Product existingProduct = getProductById(id);
+    public ProductDTO updateProduct(Long id, ProductDTO product) {
+        ProductDTO existingProduct = getProductById(id);
         existingProduct.setName(product.getName());
         existingProduct.setDescription(product.getDescription());
         existingProduct.setPrice(product.getPrice());
@@ -36,7 +36,7 @@ public class ProductService {
     }
 
     public void deleteProduct(Long id) {
-        Product existingProduct = getProductById(id);
+        ProductDTO existingProduct = getProductById(id);
         productRepository.delete(existingProduct);
     }
 }

@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2849be88-75f6-4423-887a-eea4731e9193" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/productMicroService/src/main/java/francisco/personal/productmicroservice/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productMicroService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/productMicroService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productMicroService/src/main/java/francisco/personal/productmicroservice/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/productMicroService/src/main/java/francisco/personal/productmicroservice/controllers/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productMicroService/src/main/java/francisco/personal/productmicroservice/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/productMicroService/src/main/java/francisco/personal/productmicroservice/entities/ProductDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productMicroService/src/main/java/francisco/personal/productmicroservice/repositories/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/productMicroService/src/main/java/francisco/personal/productmicroservice/repositories/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productMicroService/src/main/java/francisco/personal/productmicroservice/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/productMicroService/src/main/java/francisco/personal/productmicroservice/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/productMicroService/src/test/java/francisco/personal/productmicroservice/ProductMicroServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/productMicroService/src/test/java/francisco/personal/productmicroservice/ProductDTOMicroServiceApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,16 +25,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Product",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Product&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -41,6 +45,7 @@
       <updated>1737747736129</updated>
       <workItem from="1737747737672" duration="88000" />
       <workItem from="1737751073742" duration="37000" />
+      <workItem from="1737759763532" duration="30000" />
     </task>
     <servers />
   </component>
