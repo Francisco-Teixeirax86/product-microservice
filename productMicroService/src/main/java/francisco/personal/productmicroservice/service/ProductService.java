@@ -1,6 +1,6 @@
 package francisco.personal.productmicroservice.service;
 
-import francisco.personal.productmicroservice.entities.ProductDTO;
+import francisco.personal.productmicroservice.entities.Product;
 import francisco.personal.productmicroservice.exceptions.custom.NotFoundException;
 import francisco.personal.productmicroservice.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,20 +15,20 @@ public class ProductService {
     private ProductRepository productRepository;
 
 
-    public ProductDTO createProduct(ProductDTO product) {
+    public Product createProduct(Product product) {
         return productRepository.save(product);
     }
 
-    public List<ProductDTO> getAllProducts() {
+    public List<Product> getAllProducts() {
         return productRepository.findAll();
     }
 
-    public ProductDTO getProductById(Long id) {
+    public Product getProductById(Long id) {
         return productRepository.findById(id).orElseThrow(() -> new NotFoundException("Product not found"));
     }
 
-    public ProductDTO updateProduct(Long id, ProductDTO product) {
-        ProductDTO existingProduct = getProductById(id);
+    public Product updateProduct(Long id, Product product) {
+        Product existingProduct = getProductById(id);
         existingProduct.setName(product.getName());
         existingProduct.setDescription(product.getDescription());
         existingProduct.setPrice(product.getPrice());
@@ -37,7 +37,11 @@ public class ProductService {
     }
 
     public void deleteProduct(Long id) {
-        ProductDTO existingProduct = getProductById(id);
+        Product existingProduct = getProductById(id);
         productRepository.delete(existingProduct);
+    }
+
+    public List<Product> getFilteredProducts(String name) {
+        return productRepository.findByFilters(name);
     }
 }
