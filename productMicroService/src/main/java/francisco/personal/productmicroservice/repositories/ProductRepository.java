@@ -1,7 +1,7 @@
 package francisco.personal.productmicroservice.repositories;
 
-import francisco.personal.productmicroservice.entities.Product;
+import francisco.personal.productmicroservice.entities.ProductDTO;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface ProductRepository extends JpaRepository<Product, Long> {
+public interface ProductRepository extends JpaRepository<ProductDTO, Long> {
 }
