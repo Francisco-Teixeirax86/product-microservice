@@ -1,6 +1,6 @@
 package francisco.personal.productmicroservice.controllers;
 
-import francisco.personal.productmicroservice.entities.ProductDTO;
+import francisco.personal.productmicroservice.entities.Product;
 import francisco.personal.productmicroservice.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -19,25 +19,36 @@ public class ProductController {
     private ProductService productService;
 
     @PostMapping
-    public ResponseEntity<ProductDTO> createProduct(@RequestBody ProductDTO product) {
-        ProductDTO savedProduct = productService.createProduct(product);
+    public ResponseEntity<Product> createProduct(@RequestBody Product product) {
+        Product savedProduct = productService.createProduct(product);
         return new ResponseEntity<>(savedProduct, HttpStatus.CREATED);
     }
 
     @GetMapping
-    public List<ProductDTO> getAllProducts() {
+    public List<Product> getAllProducts() {
         return productService.getAllProducts();
     }
 
+    @GetMapping("/search")
+    public ResponseEntity<List<Product>> getProducts(
+            @RequestParam(required = false) String name,
+            @RequestParam(required = false) Integer minStock,
+            @RequestParam(required = false) Double minPrice,
+            @RequestParam(required = false) Double maxPrice
+    ) {
+        List<Product> products = productService.getFilteredProducts(name, minStock, minPrice, maxPrice);
+        return new ResponseEntity<>(products, HttpStatus.OK);
+    }
+
     @GetMapping("/{id}")
-    public ResponseEntity<ProductDTO> getProductById(@PathVariable long id) {
-        ProductDTO product = productService.getProductById(id);
+    public ResponseEntity<Product> getProductById(@PathVariable long id) {
+        Product product = productService.getProductById(id);
         return new ResponseEntity<>(product, HttpStatus.OK);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<ProductDTO> updateProduct(@PathVariable long id, @RequestBody ProductDTO product) {
-        ProductDTO updatedProduct = productService.updateProduct(id, product);
+    public ResponseEntity<Product> updateProduct(@PathVariable long id, @RequestBody Product product) {
+        Product updatedProduct = productService.updateProduct(id, product);
         return new ResponseEntity<>(updatedProduct, HttpStatus.OK);
     }
 
