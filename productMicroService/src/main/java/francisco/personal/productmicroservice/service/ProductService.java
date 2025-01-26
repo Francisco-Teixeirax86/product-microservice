@@ -41,7 +41,7 @@ public class ProductService {
         productRepository.delete(existingProduct);
     }
 
-    public List<Product> getFilteredProducts(String name) {
-        return productRepository.findByFilters(name);
+    public List<Product> getFilteredProducts(String name,  Integer minStock, Double minPrice, Double maxPrice) {
+        return productRepository.findByFilters(name, minStock, minPrice, maxPrice);
     }
 }
