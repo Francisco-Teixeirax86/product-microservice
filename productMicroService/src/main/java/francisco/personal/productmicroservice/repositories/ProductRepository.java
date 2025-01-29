@@ -14,7 +14,7 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
             "WHERE (LOWER(p.name) LIKE LOWER(CONCAT('%', :name, '%'))) "+
             "AND (:minPrice IS NULL OR p.price >= :minPrice) " +
             "AND (:maxPrice IS NULL OR p.price <= :maxPrice)" +
-            "AND (:minStock IS NULL OR p.quantity <= :minStock)")
+            "AND (:minStock IS NULL OR p.stockQuantity <= :minStock)")
     List<Product> findByFilters(@Param("name") String name,
                                 @Param("minStock") Integer minStock,
                                 @Param("minPrice") Double minPrice,

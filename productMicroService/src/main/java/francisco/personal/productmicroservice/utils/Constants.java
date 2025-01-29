@@ -13,5 +13,6 @@ public class Constants {
     public static final int notImplemented = 504;
     public static final int badGateway = 502;
     public static final int serviceOK = 200;
+    public static final long EXPIRATION_TIME = 3600000;
 
 }
