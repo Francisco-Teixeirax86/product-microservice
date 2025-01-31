@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2849be88-75f6-4423-887a-eea4731e9193" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/productMicroService/src/main/java/francisco/personal/productmicroservice/entities/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productMicroService/src/main/java/francisco/personal/productmicroservice/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productMicroService/src/main/java/francisco/personal/productmicroservice/repositories/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productMicroService/src/main/java/francisco/personal/productmicroservice/repositories/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productMicroService/src/main/java/francisco/personal/productmicroservice/security/ApplicationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productMicroService/src/main/java/francisco/personal/productmicroservice/security/JwtAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productMicroService/src/main/java/francisco/personal/productmicroservice/security/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productMicroService/src/main/java/francisco/personal/productmicroservice/service/JwtService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/productMicroService/src/main/java/francisco/personal/productmicroservice/service/UserDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productMicroService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/productMicroService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productMicroService/src/main/java/francisco/personal/productmicroservice/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/productMicroService/src/main/java/francisco/personal/productmicroservice/utils/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/productMicroService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/productMicroService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/tables.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +46,7 @@
       <workItem from="1738091486635" duration="17000" />
       <workItem from="1738105055444" duration="5000" />
       <workItem from="1738182101114" duration="6000" />
+      <workItem from="1738330449488" duration="5000" />
     </task>
     <servers />
   </component>
