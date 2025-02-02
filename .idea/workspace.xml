@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2849be88-75f6-4423-887a-eea4731e9193" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/productMicroService/src/main/java/francisco/personal/productmicroservice/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/productMicroService/src/main/java/francisco/personal/productmicroservice/controllers/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productMicroService/src/main/java/francisco/personal/productmicroservice/repositories/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/productMicroService/src/main/java/francisco/personal/productmicroservice/repositories/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productMicroService/src/main/java/francisco/personal/productmicroservice/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/productMicroService/src/main/java/francisco/personal/productmicroservice/service/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/productMicroService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/productMicroService/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +23,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Product&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;UserJWT&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
@@ -45,6 +42,11 @@
       <workItem from="1737751073742" duration="37000" />
       <workItem from="1737759763532" duration="30000" />
       <workItem from="1737919825678" duration="5000" />
+      <workItem from="1737938057394" duration="102000" />
+      <workItem from="1738091486635" duration="17000" />
+      <workItem from="1738105055444" duration="5000" />
+      <workItem from="1738182101114" duration="6000" />
+      <workItem from="1738330449488" duration="5000" />
     </task>
     <servers />
   </component>

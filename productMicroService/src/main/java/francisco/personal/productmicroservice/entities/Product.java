@@ -2,10 +2,16 @@ package francisco.personal.productmicroservice.entities;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 public class Product {
 
     @Id
@@ -27,7 +33,7 @@ public class Product {
     @NotNull(message = "Stock cannot be null")
     @Min(value = 1, message = "Stock quantity must be 1 or greater")
     @Column(name = "stock_quantity")
-    private int quantity;
+    private int stockQuantity;
 
     @Column(name = "created_at", updatable = false)
     private LocalDateTime createdAt;
@@ -35,14 +41,13 @@ public class Product {
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
 
-    public Product() {}
 
     public Product(String name, String description, double price, int quantity,
                    LocalDateTime createdAt, LocalDateTime updatedAt) {
         this.name = name;
         this.description = description;
         this.price = price;
-        this.quantity = quantity;
+        this.stockQuantity = quantity;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
     }
@@ -59,59 +64,11 @@ public class Product {
         this.updatedAt = LocalDateTime.now();
     }
 
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
 
     public void setName(String name) {
+        if (!name.startsWith("ROLE_")) {
+            throw new IllegalArgumentException("Role name must start with 'ROLE_'");
+        }
         this.name = name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
-    public LocalDateTime getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(LocalDateTime createdAt) {
-        this.createdAt = createdAt;
-    }
-
-    public LocalDateTime getUpdatedAt() {
-        return updatedAt;
-    }
-
-    public void setUpdatedAt(LocalDateTime updatedAt) {
-        this.updatedAt = updatedAt;
     }
 }
